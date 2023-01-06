@@ -4,7 +4,9 @@
   "main": "app.js",
   "scripts": {
     "test": "jest",
-    "testC": "jest --coverage"
+    "testC": "jest --coverage",
+    "lint:js": "eslint src/**/*.js",
+    "lint": "npm run lint:js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   },
   "description": "",
   "devDependencies": {
+    "eslint": "8.31.0",
     "jest": "^29.0.3"
   }
 }
